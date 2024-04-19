@@ -1,0 +1,18 @@
+<div class="div-image-capture">
+  <input type="file" accept=".jpg,.jpeg,.icon,.gif,.svg,.webp,.png,.bmp" (change)="decodeImage($event)" (click)="setResponseDefault()" />
+</div>
+<br>
+<div #resultsContainer class="div-results-container">
+  <div class="content-results">
+    <section class="results" *ngIf="responseData.text">
+      <div class="content-header">
+        <div class="response">
+          <small>Response: {{ responseData.format}}</small>
+        </div>
+      </div>
+      <div class="content-response">
+        <strong>{{ responseData.text }}</strong>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="div-content">
+  <h1>WEB CAMERA SCANNER</h1>
+  <div>
+    <button [ngStyle]="{'margin-right': '10px', 'background-color': bShowVideoCapture ? 'rgb(67,85,94)' : 'white',
+      'color': bShowVideoCapture ? 'white' : 'rgb(67,85,94)'}" (click)="showVideoCapture()">Decode Video</button>
+    <button [ngStyle]="{'background-color': !bShowVideoCapture ? 'rgb(67,85,94)' : 'white',
+      'color': bShowVideoCapture ? 'rgb(67,85,94)' : 'white'}" (click)="showImageCapture()">Decode Image</button>
+  </div>
+  <div class="container">
+    <video-capture *ngIf="bShowVideoCapture"></video-capture>
+    <image-capture *ngIf="bShowImageCapture"></image-capture>
+  </div>
+</div>

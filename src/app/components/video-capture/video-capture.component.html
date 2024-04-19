@@ -1,0 +1,17 @@
+<div #uiContainer class="div-ui-container">
+</div>
+<br>
+<div #resultsContainer class="div-results-container">
+  <div class="content-results">
+    <section class="results" *ngIf="responseData.text">
+      <div class="content-header">
+        <div class="response">
+          <small>Response: {{ responseData.format}}</small>
+        </div>
+      </div>
+      <div class="content-response">
+        <strong>{{ responseData.text }}</strong>
+      </div>
+    </section>
+  </div>
+</div>
