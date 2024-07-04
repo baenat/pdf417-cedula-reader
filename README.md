@@ -1,27 +1,45 @@
-# BarcodeReader
+<div align="center">
+
+# Pdf417 Cedula Reader
+
+<img alt="PDF417" src="src/pdf417.png" width="400" /><br>
+
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![GIT](https://img.shields.io/badge/Git-fc6d26?style=for-the-badge&logo=git&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+
+</div><br>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
 
-## Development server
+## Descripción
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Pdf417 Cedula Reader** es una aplicación web diseñada para extraer datos de las cédulas colombianas utilizando el formato de código de barras PDF417.
 
-## Code scaffolding
+## Características
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Lectura y decodificación de códigos de barras PDF417.
+- Extracción precisa de datos personales de cédulas colombianas.
+- Interfaz web fácil de usar.
 
-## Build
+# Instalación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para instalar y ejecutar la aplicación localmente, sigue estos pasos:
 
-## Running unit tests
+1. Clona el repositorio:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    ```sh
+      git clone https://github.com/baenat/pd417-cedula-reader.git
+    ```
+2. Navega al directorio del proyecto:
 
-## Running end-to-end tests
+    ```sh
+      cd pd417-cedula-reader
+    ```
+3. Instala las dependencias:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ```sh
+      npm install
+    ```
