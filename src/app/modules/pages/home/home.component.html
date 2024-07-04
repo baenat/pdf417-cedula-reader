@@ -1,13 +1,5 @@
-<div class="div-content">
-  <h1>WEB SCANNER READER PDF417</h1>
-  <div>
-    <button [ngStyle]="{'margin-right': '10px', 'background-color': bShowVideoCapture ? 'rgb(67,85,94)' : 'white',
-      'color': bShowVideoCapture ? 'white' : 'rgb(67,85,94)'}" (click)="showVideoCapture()">Decode Video</button>
-    <button [ngStyle]="{'background-color': !bShowVideoCapture ? 'rgb(67,85,94)' : 'white',
-      'color': bShowVideoCapture ? 'rgb(67,85,94)' : 'white'}" (click)="showImageCapture()">Decode Image</button>
-  </div>
-  <div class="container">
-    <video-capture *ngIf="bShowVideoCapture"></video-capture>
-    <image-capture *ngIf="bShowImageCapture"></image-capture>
-  </div>
+<header-navbar (showOption)="showOptionCapture($event)"></header-navbar>
+<div class="container">
+  <video-capture *ngIf="showVideoCapture"></video-capture>
+  <image-capture *ngIf="!showVideoCapture"></image-capture>
 </div>

@@ -7,15 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  bShowVideoCapture = true;
-  bShowImageCapture = false;
+  showVideoCapture = true;
 
-  showVideoCapture(): void {
-    this.bShowVideoCapture = true;
-    this.bShowImageCapture = false;
-  }
-  showImageCapture(): void {
-    this.bShowVideoCapture = false;
-    this.bShowImageCapture = true;
+  showOptionCapture(event: boolean): void {
+    this.showVideoCapture = event;
   }
 }
