@@ -2,6 +2,9 @@
   <input type="file" accept=".jpg,.jpeg,.icon,.gif,.svg,.webp,.png,.bmp" (change)="decodeImage($event)" (click)="setResponseDefault()" />
 </div>
 <br>
+<div class="content-preview" *ngIf="imageLoad">
+  <img #inputImage [src]="fileSelected" [alt]="fileSelected" />
+</div>
 <div #resultsContainer class="div-results-container">
   <div class="content-results">
     <section class="results" *ngIf="responseData.text">
@@ -15,4 +18,7 @@
       </div>
     </section>
   </div>
+</div>
+<div *ngIf="messsage">
+  <p>{{ messsage }}</p>
 </div>

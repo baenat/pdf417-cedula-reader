@@ -51,3 +51,16 @@ section.results {
   }
 }
 
+.content-preview {
+  box-shadow: #0bdc12 0 0 0 1px, transparent 0 0 0 0;
+  border-radius: 5px;
+  max-width: 380px;
+  margin: auto;
+  margin-top: 20px;
+
+  img {
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+  }
+}

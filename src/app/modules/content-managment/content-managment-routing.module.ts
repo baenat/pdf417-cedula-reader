@@ -5,7 +5,6 @@ import { HomeComponent } from '../pages/home/home.component';
 const routes: Routes = [
   {
     path: 'home',
-    // loadComponent: () => import('./../pages/home/home.component').then(c => c.HomeComponent)
     component: HomeComponent
   },
   {
