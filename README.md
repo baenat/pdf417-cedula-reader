@@ -14,7 +14,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
 
-## Descripción
+## Tabla de Contenidos
+
+- [Introducción](#introducción)
+- [Características](#características)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Instalación](#instalación)
+- [Uso](#uso)
+
+## Introducción
 
 **Pdf417 Cedula Reader** es una aplicación web diseñada para extraer datos de las cédulas colombianas utilizando el formato de código de barras PDF417.
 
@@ -24,22 +32,49 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Extracción precisa de datos personales de cédulas colombianas.
 - Interfaz web fácil de usar.
 
+## Tecnologías Utilizadas
+
+- **Framework**: Angular
+- **Lenguaje**: TypeScript
+- **Estilos**: SCSS
+
 # Instalación
+
+### Prerrequisitos
+
+- Node.js (versión 14 o superior)
+- Angular  (versión 16)
 
 Para instalar y ejecutar la aplicación localmente, sigue estos pasos:
 
 1. Clona el repositorio:
 
     ```sh
-      git clone https://github.com/baenat/pd417-cedula-reader.git
+      git clone https://github.com/baenat/pdf417-cedula-reader.git
     ```
 2. Navega al directorio del proyecto:
 
     ```sh
-      cd pd417-cedula-reader
+      cd pdf417-cedula-reader
     ```
-3. Instala las dependencias:
+3. Instalar las dependencias:
 
     ```sh
       npm install
     ```
+
+## Uso
+
+### Frontend
+
+```sh
+cd pdf417-cedula-reader
+ng serve
+```
+
+Estará disponible en `http://localhost:4200`.
+
+
+<div class="footer" align="right">
+    &copy; 2024 Baenat
+</div>
